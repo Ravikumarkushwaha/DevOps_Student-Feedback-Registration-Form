@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .required {
+            color: #d32f2f;
+            margin-left: 4px;
+        }
+
+        .hint {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: -10px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="info-panel">
+        <div class="logo-box">
+            <img src="https://simg.nicepng.com/png/small/491-4910202_law-faculty-symbiosis-international-university-pune-symbiosis.png" alt="Symbiosis International University Logo" class="logo-image">
+        </div>
+        <h1>Student Feedback<br>Registration Form</h1>
+        <p>Share your learning experience and help us improve academics.</p>
+    </div>
+
+    <div class="form-panel">
+        <h2>Student Feedback Registration Form</h2>
+        <p class="intro">Please fill in all required details before submitting your feedback.</p>
+
+        <form id="feedbackForm" novalidate>
+
+            <label for="name">Student Name:<span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <small class="error" id="nameError"></small>
+
+            <label for="email">Email ID:<span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="example@college.edu">
+            <small class="error" id="emailError"></small>
+
+            <label for="mobile">Mobile Number:<span class="required">*</span></label>
+            <input type="text" id="mobile" name="mobile" inputmode="numeric" placeholder="10-digit mobile number">
+            <small class="error" id="mobileError"></small>
+
+            <label for="department">Department:<span class="required">*</span></label>
+            <select id="department">
+                <option value="">--Select--</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="IT">IT</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+            <small class="error" id="departmentError"></small>
+
+            <label>Gender:<span class="required">*</span></label>
+            <div class="gender-group">
+                <label class="option-label"><input type="radio" name="gender" value="Male"> Male</label>
+                <label class="option-label"><input type="radio" name="gender" value="Female"> Female</label>
+                <label class="option-label"><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <small class="error" id="genderError"></small>
+
+            <label for="comments">Feedback Comments:<span class="required">*</span></label>
+            <textarea id="comments" rows="5" placeholder="Share your feedback (minimum 10 words)"></textarea>
+            <p class="hint">Minimum 10 words required.</p>
+            <small class="error" id="commentsError"></small>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            <p id="successMessage" class="success"></p>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
