@@ -1,84 +1,179 @@
-🎓 Student Feedback Registration Form
-Project Overview
+# Student Feedback Registration Form
 
-This project implements a Student Feedback Registration Form using HTML, CSS, JavaScript, Selenium, and Jenkins. It demonstrates end-to-end development including UI design, client-side validation, automated testing, and CI/CD integration.
+## Project Overview
 
-🎯 Objective
-Build a user-friendly web form
-Implement client-side validation using JavaScript
-Automate test cases using Selenium (Java)
-Execute and monitor tests using Jenkins
-🛠️ Technologies Used
-Frontend: HTML, CSS, JavaScript
-Automation Testing: Selenium (Java)
-CI/CD Tool: Jenkins
-📋 Features
+The **Student Feedback Registration Form** is a web-based application developed using HTML, CSS, and JavaScript to collect student feedback through an interactive and user-friendly interface. The project demonstrates the complete software development lifecycle by integrating frontend development, client-side validation, automated testing using Selenium (Java), and Continuous Integration using Jenkins.
 
-1. HTML Form
+---
 
-The form includes the following fields:
+## Objectives
 
-Student Name
-Email ID
-Mobile Number
-Department (Dropdown)
-Gender (Radio Buttons)
-Feedback Comments
-Submit and Reset Buttons
+- Design a responsive and user-friendly feedback form.
+- Implement client-side validation using JavaScript.
+- Automate functional testing using Selenium WebDriver.
+- Execute automated tests through Jenkins.
+- Demonstrate an end-to-end web application testing workflow.
 
-2. CSS Styling
-Clean and responsive layout
-Combination of internal and external CSS
-Styled input fields and buttons
+---
 
-3. JavaScript Validation
+## Technologies Used
 
-The form validates the following:
+| Technology | Purpose |
+|------------|---------|
+| HTML5 | Structure of the web application |
+| CSS3 | Styling and responsive design |
+| JavaScript | Client-side form validation |
+| Selenium (Java) | Automated functional testing |
+| Jenkins | Continuous Integration (CI/CD) |
 
-Name cannot be empty
-Email must be in valid format
-Mobile number must be exactly 10 digits
-Gender selection is required
-Department must be selected
-Feedback must contain at least 10 words
+---
 
-4. Selenium Testing
+## Features
 
-Automated test cases include:
+### Student Feedback Form
 
-Page load verification
-Valid form submission
-Empty field validation
-Invalid email validation
-Invalid mobile number validation
-Dropdown selection check
-Submit and Reset button functionality
+The application includes the following fields:
 
-5. Jenkins Automation
-Jenkins installed and configured
-Freestyle job created
-Project linked via local workspace
-Selenium test cases executed via build steps
-Build status verified
+- Student Name
+- Email ID
+- Mobile Number
+- Department (Dropdown)
+- Gender (Radio Buttons)
+- Feedback Comments
+- Submit Button
+- Reset Button
 
-🚀 How to Run the Project
-🔹 Run the Web Application
-Download or clone the repository
-Open the HTML file in a browser
+### User Interface
 
-🔹 Run Selenium Tests
-Set up Java and Selenium dependencies
-Configure WebDriver (e.g., ChromeDriver)
-Run test scripts from your IDE
+- Clean and responsive layout
+- Well-structured form design
+- Styled input fields and buttons
+- Combination of internal and external CSS
 
-🔹 Run with Jenkins
-Open Jenkins dashboard
-Create a Freestyle Job
-Configure source code path
-Add build steps to execute Selenium tests
-Run the job and check build status
+### JavaScript Validation
 
-✅ Final Result
-Form validation working correctly
-Selenium test cases executed successfully
-Jenkins build status: SUCCESS
+The application validates the following before form submission:
+
+- Student Name cannot be empty.
+- Email must be in a valid format.
+- Mobile Number must contain exactly **10 digits**.
+- Gender selection is mandatory.
+- Department must be selected.
+- Feedback must contain at least **10 words**.
+
+---
+
+## Selenium Test Automation
+
+The project includes automated test cases for:
+
+- Page Load Verification
+- Valid Form Submission
+- Empty Field Validation
+- Invalid Email Validation
+- Invalid Mobile Number Validation
+- Department Dropdown Verification
+- Submit Button Functionality
+- Reset Button Functionality
+
+---
+
+## Jenkins CI/CD Integration
+
+Jenkins is used to automate the execution of Selenium test cases.
+
+### Jenkins Workflow
+
+- Jenkins installed and configured.
+- Freestyle project created.
+- Project linked through the local workspace.
+- Selenium test cases executed automatically.
+- Build status monitored using the Jenkins dashboard.
+
+---
+
+## Getting Started
+
+### Run the Web Application
+
+1. Clone the repository.
+
+```bash
+git clone https://github.com/<your-username>/DevOps_Student-Feedback-Registration-Form.git
+```
+
+2. Open the project folder.
+
+3. Launch `index.html` in any modern web browser.
+
+### Run Selenium Tests
+
+1. Install Java JDK.
+2. Configure Selenium dependencies.
+3. Download and configure ChromeDriver.
+4. Open the project in Eclipse or IntelliJ IDEA.
+5. Execute `FeedbackFormTest.java`.
+
+### Run Using Jenkins
+
+1. Open the Jenkins Dashboard.
+2. Create a Freestyle Project.
+3. Configure the project workspace.
+4. Add build steps to execute Selenium test cases.
+5. Save the configuration.
+6. Trigger a build and verify the build status.
+
+---
+
+## Project Structure
+
+```text
+DevOps_Student-Feedback-Registration-Form/
+│
+├── FeedbackFormTest.java      # Selenium automation test cases
+├── Jenkins.png                # Jenkins build screenshot
+├── README.md                  # Project documentation
+├── Webpage.png                # Application screenshot
+├── index.html                 # Student feedback form
+├── script.js                  # JavaScript validation
+├── style.css                  # CSS styling
+└── test.py                    # Python test file
+```
+
+---
+
+## Project Screenshots
+
+### Student Feedback Registration Form
+
+![Web Application](Webpage.png)
+
+### Jenkins Build Status
+
+![Jenkins](Jenkins.png)
+
+---
+
+## Expected Outcome
+
+- Responsive and user-friendly feedback registration form.
+- Accurate client-side validation.
+- Successful execution of Selenium automation test cases.
+- Automated test execution using Jenkins.
+- Successful Jenkins build status.
+
+---
+
+## Future Enhancements
+
+- Integrate a backend for storing feedback.
+- Connect the application with a database.
+- Add user authentication and login.
+- Generate feedback reports and analytics.
+- Implement email notifications after successful submission.
+
+---
+
+## Author
+
+**Ravi Kumar Kushwaha**
